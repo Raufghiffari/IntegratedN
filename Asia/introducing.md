@@ -1,4 +1,3 @@
-
 # Panduan Lengkap Bahasa **`.in`** — IntegratedN (v1.0)
 
 > **IntegratedN (`.in`)** adalah bahasa pemrograman *beginner‑friendly* yang berfungsi sebagai **jembatan menuju JavaScript**. Transpiler ditulis menggunakan **Rust** dan men‑transpile kode `.in` menjadi JavaScript 1:1 secara semantik.
@@ -358,43 +357,7 @@ Operators: `+ - * / %`, comparators `== != === > >= < <=`, logical `and or not`
 
 * * *
 
-## 18. VS Code extension & integrasi
-
-Fitur yang tersedia / direkomendasikan:
-
-* Syntax highlighting (TextMate grammar)
-* Snippets untuk `function`, `for`, `if`, `set`, `let`
-* Command `Convert .in → .js` (menjalankan binary lokal)
-* Diagnostics integration: jalankan transpiler untuk parse/semantic dan peta error ke Diagnostics API
-
-Packaging:
-
-* `vsce package` → hasil `.vsix`
-* `vsce publish` → butuh publisher & Personal Access Token
-
-* * *
-
-## 19. Testing & debugging
-
-* Siapkan suite unit tests untuk:
-  
-  * Lexer (token sequences)
-  * Parser (AST shapes)
-  * Semantic (diagnostics)
-  * CodeGen (JS output string equality / snapshot)
-* Contoh tools: `cargo test` (Rust)
-  
-* Buat fixtures `.in` → expected `.js` untuk snapshot testing
-  
-
-Debugging tips:
-
-* Jaga supaya CodeGen deterministik (whitespace predictable)
-* Sediakan `--emit-ast` flag di CLI untuk inspeksi AST
-
-* * *
-
-## 20. Roadmap & kontribusi
+## 18. Roadmap & kontribusi
 
 **Planned (v1.1+):**
 
@@ -403,3 +366,11 @@ Debugging tips:
 * class & OOP primitives
 * Improved linter & suggestions
 * Better VS Code integration (hover, go-to-def)
+
+**How to contribute:**
+
+* Fork repo
+* Buka issue / discussion
+* Pull request: fitur / bugfix + tests
+  
+  * * *
